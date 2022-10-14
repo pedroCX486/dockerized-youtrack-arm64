@@ -11,9 +11,10 @@ services:
     networks:
       - external_network
     volumes:
-      - ./data:/root/teamsysdata
-      - ./backups:/root/.youtrack/backups
-      - ./logs:/root/.youtrack/logs
+      - ./data:/opt/youtrack/teamsysdata
+      - ./conf:/opt/youtrack/teamsysdata/conf
+      - ./backups:/opt/youtrack/.youtrack/backups
+      - ./logs:/opt/youtrack/.youtrack/logs
 
 networks:
   external_network:

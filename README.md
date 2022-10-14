@@ -14,3 +14,5 @@ then
 and when you're done and ready:
 
 `docker compose up -d`
+  
+PS: I'm aware it runs as root inside the container. If you can, help by send a PR changing it to a non-root user.

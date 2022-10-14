@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+
+  youtrack:
+    build: .
+    image: pedrocx486/youtrack
+    container_name: "youtrack"
+    ports:
+      - "8080:8080"
+    networks:
+      - external_network
+    volumes:
+      - ./data:/root/teamsysdata
+      - ./backups:/root/.youtrack/backups
+      - ./logs:/root/.youtrack/logs
+
+networks:
+  external_network:
+    external: true

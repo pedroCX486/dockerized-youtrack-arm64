@@ -14,7 +14,7 @@ RUN groupadd -r -g 13001 jetbrains && useradd -r -g jetbrains -u 13001 jetbrains
 
 RUN mkdir -m 0750 /opt/youtrack
 
-COPY ./youtrack-*.jar /opt/youtrack
+COPY ./${YOUTRACK_JAR_FILE} /opt/youtrack
 
 RUN chown -R jetbrains:jetbrains /opt/youtrack
 

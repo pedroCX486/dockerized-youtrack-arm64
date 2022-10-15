@@ -2,8 +2,7 @@ FROM arm64v8/amazoncorretto:11
 
 ENV YOUTRACK_JAR_FILE=youtrack-2022.2.57431.jar
 
-HEALTHCHECK --start-period=1m \
-            CMD wget --server-response --output-document=/dev/null http://localhost:8080 || exit 1
+HEALTHCHECK NONE
 
 CMD ["bash"]
 

@@ -1,16 +1,20 @@
 # dockerized-youtrack-arm64
 Docker files to run YouTrack (.jar) on an ARM64 server. This may not be the best/optimal settings but it works quite well.
   
-You need to download the YouTrack `.jar` file from the JetBrains website and change the Dockerfile as needed for the version you got.
+You need to download the YouTrack `.jar` file from the JetBrains website and change the `Dockerfile` to match the version of the file you got.
   
 After that it's as simple as: 
 
-`docker compose build`
+1- `docker compose build`
 
-then 
+2- `sudo chown -R 13001:13001 backups/ data/ logs/`
 
-`docker compose up`
+3- `docker compose up`
 
-and when you're done and ready:
+And when you're done setting you YouTrack and ready to run as daemon:
 
-`docker compose up -d`
+1- `CTRL+C` to stop container
+
+2 `docker compose up -d`
+
+Done!

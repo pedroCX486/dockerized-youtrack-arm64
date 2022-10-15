@@ -11,10 +11,9 @@ services:
     networks:
       - external_network
     volumes:
-      - ./data:/opt/youtrack/teamsysdata
-      - ./conf:/opt/youtrack/teamsysdata/conf
-      - ./backups:/opt/youtrack/.youtrack/backups
-      - ./logs:/opt/youtrack/.youtrack/logs
+      - ./data:/home/jetbrains/teamsysdata
+      - ./backups:/home/jetbrains/.youtrack/backups
+      - ./logs:/home/jetbrains/.youtrack/logs
 
 networks:
   external_network:

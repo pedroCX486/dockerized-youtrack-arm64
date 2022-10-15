@@ -6,6 +6,7 @@ services:
     build: .
     image: pedrocx486/youtrack
     container_name: "youtrack"
+    restart: always
     ports:
       - "8080:8080"
     networks:

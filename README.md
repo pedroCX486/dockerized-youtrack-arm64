@@ -2,6 +2,7 @@
 Docker files to run YouTrack (.jar) on an ARM64 server.
   
 You need to download the YouTrack `.jar` file from the JetBrains website and change VAR `YOUTRACK_JAR_FILE` in the `Dockerfile` to match the version of the file you got.  
+  
 Remember to also put all of the files (Dockerfile, docker-compose.yml and the .jar file) in the same directory before following the instructions!
   
 After that it's as simple as: 

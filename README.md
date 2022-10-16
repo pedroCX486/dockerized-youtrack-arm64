@@ -41,7 +41,7 @@ And done!
 
 7- Delete the old `.jar` file
 
-And Done!
+And done!
   
 --------
 If you want to cleanup your Docker environment you can run the following command, but **KEEP IN MIND THAT IT CAN BE DESTRUCTIVE**! It'll delete all containers, volumes, networks, images and build caches that aren't being used by at least one container. If you have a container stopped that you will run later, do not run this. Only run this **when all containers are UP and RUNNING*.

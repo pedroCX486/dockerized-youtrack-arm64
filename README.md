@@ -25,9 +25,7 @@ And when you're done setting up YouTrack (follow the instructions on JetBrains w
 
 And done!
 
-## Updating
-
-# BACKUP YOUR DATA FIRST!
+## Updating - BACKUP YOUR DATA FIRST!
 
 1- First you will need the updated `.jar` file from the JetBrains website and place it where your old `.jar` file is located.
 

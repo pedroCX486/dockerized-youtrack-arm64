@@ -1,11 +1,13 @@
 # dockerized-youtrack-arm64
-Docker files to run YouTrack (.jar) on an ARM64 server.
+Docker files to run YouTrack (`.jar` version) on an ARM64 server.
+
+## Installation
   
-You need to download the YouTrack `.jar` file from the JetBrains website and change VAR `YOUTRACK_JAR_FILE` in the `Dockerfile` to match the version of the file you got.  
+You need to download the YouTrack `.jar` file from the JetBrains website and change VAR `YOUTRACK_JAR_FILE` in the `Dockerfile` to match the version of the `.JAR` file you got.  
   
-Remember to also put all of the files (Dockerfile, docker-compose.yml and the .jar file) in the same directory before following the instructions!
+Remember to also put all of the files (`Dockerfile`, `docker-compose.yml` and the `.jar` file) in the same directory before following the instructions!
   
-After that it's as simple as: 
+After that it's as simple as running the following commands in sequence: 
 
 1- `docker compose build`
 
@@ -22,3 +24,26 @@ And when you're done setting up YouTrack (follow the instructions on JetBrains w
 2- `docker compose up -d`
 
 And done!
+
+## Updating
+
+1- First you will need the updated `.jar` file from the JetBrains website and place it where your old `.jar` file is located.
+
+2- Update the VAR `YOUTRACK_JAR_FILE` in the `Dockerfile` to match the version of the new `.jar` file.
+
+3- Run `docker compose build`
+
+4- If build was successful run `docker compose up`
+
+5- If YouTrack launched without issues, press `CTRL+C` to stop container
+
+6- Run `docker compose up -d` to run as daemon
+
+7- Delete the old `.jar` file
+
+And Done!
+  
+--------
+If you want to cleanup your Docker environment you can run the following command, but **KEEP IN MIND THAT IT CAN BE DESTRUCTIVE**! It'll delete all containers, volumes, networks, images and build caches that aren't being used by at least one container. If you have a container stopped that you will run later, do not run this. Only run this **when all containers are UP and RUNNING*.
+  
+`docker system prune --volumes --all`

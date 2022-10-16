@@ -37,4 +37,4 @@ USER jetbrains
 
 VOLUME ["/home/jetbrains/.youtrack/logs", "/home/jetbrains/.youtrack/backups", "/home/jetbrains/teamsysdata"]
 
-CMD ["sh", "-c", "java -Djava.awt.headless=true -Djetbrains.jar.use.system.java=true -Djetbrains.youtrack.disableBrowser=true -jar /opt/youtrack/${YOUTRACK_JAR_FILE} 8080"]
+CMD ["sh", "-c", "java -Djava.awt.headless=true -Djetbrains.jar.use.system.java=true -jar /opt/youtrack/${YOUTRACK_JAR_FILE} --no-browser 8080"]

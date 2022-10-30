@@ -37,7 +37,7 @@ And done!
 
 5- Then run `docker compose up` to start the container with the new version that you just built
 
-5- If YouTrack launched and you configured it without issues (refer to the JetBrain website if you need help, but PLEASE remember you need to go through the wizard again, but instead of Set Up, select Upgrade), press `CTRL+C` to stop container
+5- If YouTrack launched and you configured it without issues (refer to the JetBrains website if you need help, but PLEASE remember you need to go through the wizard again, but instead of Set Up, select Upgrade), press `CTRL+C` to stop container
 
 6- Run `docker compose up -d` to run as daemon
 

@@ -17,11 +17,11 @@ After that it's as simple as running the following commands in sequence:
 
 4- Then run `docker compose up` to fire up the containers
 
-And when you're done setting up YouTrack (follow the instructions on JetBrains website if you need help with that) and is ready to run the container as daemon:
+And when you're done setting up YouTrack (follow the instructions on JetBrains website if you need help with that) and is ready to run the container in dettached mode:
 
 1- Press `CTRL+C` to stop container
 
-2- Then run `docker compose up -d` to run the container as daemon
+2- Then run `docker compose up -d` to run the container dettached
 
 And done!
 
@@ -37,9 +37,9 @@ And done!
 
 5- Then run `docker compose up` to start the container with the new version that you just built
 
-5- If YouTrack launched and you configured it without issues (refer to the JetBrains website if you need help, but PLEASE remember you need to go through the wizard again, but instead of Set Up, select Upgrade), press `CTRL+C` to stop container
+5- If YouTrack launched and you configured it without issues (refer to the JetBrains website if you need help, but PLEASE remember you need to go through the wizard again, use the URL provided in the terminal), then press `CTRL+C` to stop container
 
-6- Run `docker compose up -d` to run as daemon
+6- Run `docker compose up -d` to run detached
 
 7- Delete the old `.jar` file
 

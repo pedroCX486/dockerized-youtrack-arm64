@@ -1,6 +1,6 @@
 FROM arm64v8/amazoncorretto:11
 
-ENV YOUTRACK_JAR_FILE=youtrack-2022.2.60273.jar
+ENV YOUTRACK_JAR_FILE=youtrack-2022.3.65360.jar
 
 HEALTHCHECK NONE
 
